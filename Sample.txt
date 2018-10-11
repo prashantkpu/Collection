@@ -1,0 +1,16 @@
+c= Collection()
+
+c.is_collection_empty()		#returns True
+c.add(5)
+c.is_collection_empty()		#returns False
+c.add(6)
+c.total_items()			#returns 2
+c.is_present(5)			#returns True
+c.is_present(7)			#returns False
+c.add(6)
+c.frequency(6)			#returns 2
+c.most_frequent()		#returns ([6],2)
+c.remove(6)
+c.least_frequent()		#returns ([5,6],1)
+c.pretty_print()		#prints collection in human readable form by clubing duplicates together
+print(c)			#prints items in the collection
